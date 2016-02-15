@@ -43,6 +43,7 @@ install {
 
                 // Add your description here
                 name 'image-progress-bar'
+                artifactId 'image-progress-bar'
                 url siteUrl
 
                 // Set your license

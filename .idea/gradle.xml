@@ -10,14 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/example" />
-            <option value="$PROJECT_DIR$/ipb" />
+            <option value="$PROJECT_DIR$/image-progress-bar" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/example" />
-            <option value="$PROJECT_DIR$/ipb" />
+            <option value="$PROJECT_DIR$/image-progress-bar" />
           </set>
         </option>
       </GradleProjectSettings>

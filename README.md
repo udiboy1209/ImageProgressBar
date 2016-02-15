@@ -14,7 +14,7 @@ Install
 add this line to dependencies in your `build.gradle`
 
 
-    compile 'in.udiboy.ipb:ipb:0.1-dev@aar'
+    compile 'in.udiboy.ipb:image-progress-bar:0.1-dev'
 
 
 Use
