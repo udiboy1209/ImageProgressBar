@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ImageProgressBar.iml" filepath="$PROJECT_DIR$/ImageProgressBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/image-progress-bar/ipb.iml" filepath="$PROJECT_DIR$/image-progress-bar/ipb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image-progress-bar/image-progress-bar.iml" filepath="$PROJECT_DIR$/image-progress-bar/image-progress-bar.iml" />
     </modules>
   </component>
 </project>

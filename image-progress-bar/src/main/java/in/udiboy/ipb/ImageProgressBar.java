@@ -10,7 +10,7 @@ import android.view.View;
 
 public class ImageProgressBar extends View {
     private Bitmap front, back, frontOriginal, backOriginal;
-    private int progress=0;
+    private double progress=0;
 
     public ImageProgressBar(Context context, AttributeSet attrs) {
         super(context);
@@ -43,22 +43,22 @@ public class ImageProgressBar extends View {
     @Override
     public void onDraw(Canvas canvas){
         try{
-            canvas.drawBitmap(Bitmap.createBitmap(back,0,(100-progress)*back.getHeight()/100,back.getWidth(),progress*back.getHeight()/100)
-                    ,0,(100-progress)*canvas.getHeight()/100,null);
+            int height=(int)(progress*back.getHeight());
+            int y=(int)((1-progress)*back.getHeight());
+            int canvasY=(int)((1-progress)*canvas.getHeight());
 
+            canvas.drawBitmap(Bitmap.createBitmap(back,0,y,back.getWidth(),height),0,canvasY,null);
             canvas.drawBitmap(front,0,0,null);
         } catch (IllegalArgumentException e){
             e.printStackTrace();
         }
-
-        canvas.drawBitmap(front, 0, 0, null);
     }
 
-    public void setProgress(int progress){
+    public void setProgress(double progress){
         if(progress<0)
             this.progress=0;
-        else if(progress>100)
-            this.progress=100;
+        else if(progress>1)
+            this.progress=1;
         else
             this.progress = progress;
 
@@ -70,7 +70,7 @@ public class ImageProgressBar extends View {
         });
     }
 
-    public int getProgress() {
+    public double getProgress() {
         return progress;
     }
 }

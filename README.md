@@ -33,6 +33,8 @@ You need to init in code and add it to a `ViewGroup`
         mIPB.setFrontImage(R.drawable.star_border);
 
         ((FrameLayout) findViewById(R.id.ipb)).addView(mIPB);
+        
+Call `setProgress(double)` to update the progress where the double is a fraction between 0 and 1
 
 License
 -----------
