@@ -3,6 +3,7 @@ package in.udiboy.examples.ipb;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
@@ -28,15 +29,23 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                int incr = 2;
+                double incr = 0.2;
 
-                while(true) {
+                while(!Thread.currentThread().isInterrupted()) {
                     try {
-                        int progress = mIPB.getProgress()+incr;
+
+                        double progress = mIPB.getProgress();
+                        if(progress<0) continue;
+
+                        progress+=incr;
+                        Log.d("MainActivity","new progress: "+progress);
+
+                        if(progress>1)
+                            break;
+
                         mIPB.setProgress(progress);
-                        if(progress>100 || progress < 0)
-                            incr = -incr;
-                        Thread.sleep(100);
+
+                        Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
