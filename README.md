@@ -3,6 +3,8 @@ Image Progress Bar
 
 Displays progress by cropping the back image wrt progress percentage, and placing it below front image.
 
+![example](http://i.imgur.com/SfeUjKF.gif)
+
 Latest version
 --------------
 
