@@ -8,7 +8,7 @@ Displays progress by cropping the back image wrt progress percentage, and placin
 Latest version
 --------------
 
-0.1-dev
+0.2-dev
 
 Install
 ---------
@@ -16,7 +16,7 @@ Install
 add this line to dependencies in your `build.gradle`
 
 
-    compile 'in.udiboy.ipb:image-progress-bar:0.1-dev'
+    compile 'in.udiboy.ipb:image-progress-bar:0.2-dev'
 
 
 Use
