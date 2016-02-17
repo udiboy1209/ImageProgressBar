@@ -83,6 +83,10 @@ public class ImageProgressBar extends View {
         transitionThread.setProgress(progress);
     }
 
+    public void reset(){
+        transitionThread.reset();
+    }
+
     protected void setCurrentProgress(double progress){
         if(progress<0)
             this.progress=0;

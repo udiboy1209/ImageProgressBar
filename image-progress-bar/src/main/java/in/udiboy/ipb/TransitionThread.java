@@ -43,6 +43,12 @@ public final class TransitionThread extends Thread{
         finalProgress = p;
     }
 
+    public void reset(){
+        finalProgress=0;
+        currentProgress=0;
+        mIPB.setCurrentProgress(currentProgress);
+    }
+
     public double getFinalProgress(){
         return finalProgress;
     }

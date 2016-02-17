@@ -40,12 +40,13 @@ public class MainActivity extends AppCompatActivity {
                         progress+=incr;
                         Log.d("MainActivity","new progress: "+progress);
 
-                        if(progress>1)
-                            break;
+                        if(progress>1) {
+                            mIPB.reset();
+                        } else {
+                            mIPB.setProgress(progress);
+                        }
 
-                        mIPB.setProgress(progress);
-
-                        Thread.sleep(2000);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
