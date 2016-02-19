@@ -17,8 +17,8 @@
         android:textSize="22sp"/>
 
     <FrameLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="402dp"
+        android:layout_height="158dp"
         android:id="@+id/ipb"
         android:layout_centerInParent="true"/>
 

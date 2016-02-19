@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         mIPB = new ImageProgressBar(this, null);
         ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         mIPB.setLayoutParams(lp);
-        mIPB.setBackImage(R.drawable.star);
-        mIPB.setFrontImage(R.drawable.star_border);
+        mIPB.setBackImage(R.drawable.img_back);
+        mIPB.setFrontImage(R.drawable.img_front);
 
         ((FrameLayout) findViewById(R.id.ipb)).addView(mIPB);
 
