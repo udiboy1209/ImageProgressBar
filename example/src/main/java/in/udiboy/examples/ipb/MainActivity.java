@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                double incr = 0.2;
+                double incr = 0.15;
 
                 while(!Thread.currentThread().isInterrupted()) {
                     try {
